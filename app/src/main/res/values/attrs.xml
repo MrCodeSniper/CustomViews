@@ -22,4 +22,10 @@
 
     </declare-styleable>
 
+    <declare-styleable name="MyIndexBar">
+
+        <attr name="letter_size" format="dimension" />
+
+    </declare-styleable>
+
 </resources>
