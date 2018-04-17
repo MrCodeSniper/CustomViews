@@ -9,4 +9,4 @@
 
 2.字母检索栏
 
-![]()
+![字母检索栏](https://github.com/MrCodeSniper/CustomViews/blob/master/gif/indexbar.gif)
