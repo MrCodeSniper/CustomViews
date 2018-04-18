@@ -14,6 +14,7 @@
         <!--android:layout_weight="1"-->
        <!--/>-->
     <com.example.mac.customviews.View.TitterView.ConfirmView
+        android:visibility="gone"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
@@ -46,6 +47,48 @@
         android:background="@drawable/bg"
         android:layout_width="80dp"
         android:layout_height="80dp" />
+
+
+
+
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    </ListView>
+
+
+
+ <LinearLayout
+     android:layout_alignParentBottom="true"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content">
+
+
+     <Button
+         android:id="@+id/btn_modle"
+         android:text="Mode:普通模式"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content" />
+
+     <Button
+         android:id="@+id/btn_changemodle"
+         android:text="改变模式"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content" />
+
+
+
+
+
+ </LinearLayout>
+
+
+
+
 
 
 </RelativeLayout>
