@@ -149,4 +149,7 @@ public class MyIndexBar extends View {
     public  interface onTouchLetterListener{
         void onTouchLetter(String letter);
     }
+
+
+
 }

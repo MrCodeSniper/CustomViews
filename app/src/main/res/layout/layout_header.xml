@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <ImageView android:layout_width="match_parent"
+        android:src="@drawable/parallax_img"
+        android:scaleType="centerCrop"
+        android:id="@+id/imageView"
+        android:layout_height="160dp"/>
+
+</LinearLayout>
+
+<!-- layout_width都是根据父布局确定的 若只有imageview则显示图片全部大小 -->

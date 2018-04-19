@@ -5,7 +5,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#fff"
-    android:orientation="vertical"
     tools:context="com.example.mac.customviews.MainActivity">
 
     <!--<com.example.mac.customviews.View.ConfirmView.ConfirmViewView&ndash;&gt;-->
@@ -52,13 +51,13 @@
 
 
 
-    <ListView
+    <com.example.mac.customviews.View.ParallexList.ParallexView
         android:id="@+id/listview"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
 
-    </ListView>
+    </com.example.mac.customviews.View.ParallexList.ParallexView>
 
 
 

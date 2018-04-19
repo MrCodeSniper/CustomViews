@@ -1,5 +1,6 @@
 package com.example.mac.customviews;
 
+import android.app.Activity;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -16,17 +17,18 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.mac.customviews.View.IndexBar.MyIndexBar;
+import com.example.mac.customviews.View.ParallexList.ParallexView;
 import com.example.mac.customviews.View.SwipeLayout.SwipeLayout;
 
 import java.util.ArrayList;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends Activity {
 
     private TextView textView;
     private MyIndexBar indexbar;
     private Handler handler=new Handler();
 
-    private ListView listView;
+    private ParallexView listView;
     private ArrayList<String> list=new ArrayList<String>();
 
     private Button btn_modle;
@@ -58,13 +60,16 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
-        listView = (ListView) findViewById(R.id.listview);
+        listView = (ParallexView) findViewById(R.id.listview);
+        listView.setOverScrollMode(View.OVER_SCROLL_NEVER);//永远不显示头顶的蓝色阴影
+        View headerview= View.inflate(this,R.layout.layout_header,null);
+        ImageView imageView= (ImageView) headerview.findViewById(R.id.imageView);
+        listView.addHeaderView(headerview);
         for(int i=0;i<30;i++){
             list.add("第"+i+"条数据");
         }
 
         final Myadapter myadapter=new Myadapter();
-//        myadapter.setEdit(true);
         listView.setAdapter(myadapter);
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
@@ -74,15 +79,10 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-//        listView.setOnTouchListener(new View.OnTouchListener() {
-//            @Override
-//            public boolean onTouch(View v, MotionEvent event) {
-//                return false;
-//            }
-//        });
 
 
 
+        listView.setParallexImageView(imageView);
         btn_changemodle.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -99,7 +99,13 @@ public class MainActivity extends AppCompatActivity {
 
 
 
+
+
+
+
     }
+
+
 
 
     class Myadapter extends BaseAdapter implements SwipeLayout.OnSwipeStateChangedListener{
