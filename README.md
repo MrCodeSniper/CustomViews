@@ -10,3 +10,8 @@
 2.字母检索栏
 
 ![字母检索栏](https://github.com/MrCodeSniper/CustomViews/blob/master/gif/indexbar.gif)
+
+
+3.侧拉选项栏
+
+![侧拉选项栏](https://github.com/MrCodeSniper/CustomViews/blob/master/gif/swipelayout.gif)
