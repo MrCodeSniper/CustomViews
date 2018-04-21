@@ -15,3 +15,8 @@
 3.侧拉选项栏
 
 ![侧拉选项栏](https://github.com/MrCodeSniper/CustomViews/blob/master/gif/swipelayout.gif)
+
+
+4.仿微信朋友圈下拉效果
+
+![仿微信朋友圈下拉效果](https://github.com/MrCodeSniper/CustomViews/blob/master/gif/parrallex.gif)
