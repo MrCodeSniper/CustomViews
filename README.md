@@ -20,3 +20,8 @@
 4.仿微信朋友圈下拉效果
 
 ![仿微信朋友圈下拉效果](https://github.com/MrCodeSniper/CustomViews/blob/master/gif/parrallex.gif)
+
+
+5.仿FlipBoard开场动画view效果
+
+![仿FlipBoard开场动画view效果](https://github.com/MrCodeSniper/CustomViews/blob/master/gif/flip_borad.gif)
