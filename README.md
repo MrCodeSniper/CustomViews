@@ -24,4 +24,4 @@
 
 5.仿FlipBoard开场动画view效果
 
-![仿FlipBoard开场动画view效果](https://github.com/MrCodeSniper/CustomViews/blob/master/gif/flip_borad.gif)
+![仿FlipBoard开场动画view效果](https://github.com/sunnyxibei/HenCoderPractice/blob/master/jpg/flipboard.gif?raw=true)
